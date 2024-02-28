@@ -8,11 +8,6 @@ const router = jsonServer.router('db/db.json')
 // Bind the router db to the app
 app.db = router.db
 
-const middlewares = jsonServer.defaults()
-
-app.use(middlewares)
-
-
 app.use(auth.rewriter({
 
 }))
