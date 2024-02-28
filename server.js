@@ -5,12 +5,14 @@ const app = jsonServer.create()
 
 const router = jsonServer.router('db/db.json')
 
-// Bind the router db to the app
+app.use(jsonServer.bodyParser)
 app.db = router.db
 
-app.use(auth.rewriter({
+const rules = auth.rewriter({
+  users: 600,
+});
 
-}))
+app.use(rules)
 app.use(auth)
 app.use(router)
 app.listen(4000, () => {
