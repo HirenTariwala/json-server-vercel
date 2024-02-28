@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "email": "hiren@gmail.com",
+      "password": "$2a$10$/ofRgrkq5NptTd.CumgHmOdU8qCocdmA177gw/1qu.CqMVsAJTg46",
+      "name": "hiren",
+      "role": "author",
+      "id": 1
+    }
+  ]
+}
